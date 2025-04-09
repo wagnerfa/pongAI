@@ -1,8 +1,9 @@
 # pongAI
 
 
-#PONG COM MACHINE LEARNING
-
+============================================================
+                    PONG COM MACHINE LEARNING
+============================================================
 
 Este repositório contém um projeto que integra o clássico jogo de Pong com técnicas de Aprendizado por Reforço (Q-Learning).
 A IA é treinada para jogar Pong e, posteriormente, o jogador pode desafiá-la. O projeto possui uma estrutura modular e uma 
