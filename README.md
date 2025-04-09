@@ -1,76 +1,94 @@
 # pongAI
 
-Pong com Machine Learning
-Este repositório reúne um projeto que integra o clássico jogo de Pong com técnicas de Machine Learning por Reforço. O objetivo é treinar uma Inteligência Artificial (IA) para jogar Pong utilizando algoritmos como Q-Learning, permitindo posteriormente que o usuário jogue contra a IA treinada. Além disso, o projeto conta com uma interface visualmente atrativa e uma estrutura modular, ideal para estudos e inclusão em portfólios.
 
-Visão Geral
-Objetivo:
-Desenvolver um jogo de Pong integrado com aprendizado por reforço, onde a IA é treinada para jogar e, em seguida, o usuário pode desafiar a IA.
+============================================================
+                    PONG COM MACHINE LEARNING
+============================================================
 
-Funcionalidades:
+Este repositório contém um projeto que integra o clássico jogo de Pong com técnicas de Aprendizado por Reforço (Q-Learning).
+A IA é treinada para jogar Pong e, posteriormente, o jogador pode desafiá-la. O projeto possui uma estrutura modular e uma 
+interface visual atrativa, ideal para fins de estudo e portfólio.
 
-Jogo de Pong com gráficos e sons atrativos.
+----------------------------
+🎯 OBJETIVO
+----------------------------
+- Desenvolver um jogo de Pong com IA treinada via aprendizado por reforço.
+- Permitir o modo de jogo humano vs IA treinada.
+- Documentar todo o processo de forma clara, com visualização de métricas.
 
-Treinamento da IA utilizando Q-Learning, com registro detalhado de métricas (número de episódios, recompensa, evolução das gerações, etc.).
+----------------------------
+🚀 FUNCIONALIDADES
+----------------------------
+- Jogo de Pong com gráficos e sons atrativos.
+- Treinamento da IA utilizando Q-Learning com registro de métricas.
+- Modo de jogo humano vs IA treinada.
+- Visualização das recompensas, número de episódios e desempenho da IA.
 
-Modo de jogo para partidas entre humano e IA.
-
-Análise e visualização de dados do treinamento por meio de gráficos e notebooks.
-
-Estrutura do Projeto
+----------------------------
+📁 ESTRUTURA DO PROJETO
+----------------------------
 
 pong-ml/
-├── docs/                  
-│   └── projeto.pdf        # Documentação detalhada: diagramas, explicações, desafios e soluções
-├── assets/                
-│   ├── images/            # Recursos visuais: sprites, fundos
-│   └── sounds/            # Efeitos sonoros e músicas de fundo
-├── src/                   
-│   ├── game.py            # Lógica do jogo: definição de bola, raquetes e renderização
-│   ├── agent.py           # Implementação do agente de Q-Learning
-│   ├── environment.py     # Ambiente estilo Gym para treinamento (reset, step, render)
-│   ├── train.py           # Script para treinamento do agente e registro de métricas
-│   ├── play.py            # Script para partida entre jogador e IA
-│   └── utils.py           # Funções auxiliares (salvar/carregar métricas e logs)
-├── notebooks/             
-│   └── exploratory_analysis.ipynb   # Análises e visualizações dos dados do treinamento
-├── requirements.txt       # Dependências do projeto (pygame, numpy, matplotlib, etc.)
-└── README.md              # Visão geral, instruções de execução e contribuições
+├── docs/                          → Documentação (PDFs, diagramas, etc.)
+│   └── projeto.pdf
+├── assets/                        → Recursos visuais e sonoros
+│   ├── images/                    → Sprites, fundos
+│   └── sounds/                    → Efeitos sonoros
+├── src/                           → Código-fonte principal
+│   ├── game.py                    → Lógica do jogo (bola, raquetes, renderização)
+│   ├── agent.py                   → Agente Q-Learning
+│   ├── environment.py             → Ambiente tipo Gym para IA
+│   ├── train.py                   → Treinamento da IA
+│   ├── play.py                    → Modo jogador vs IA
+│   └── utils.py                   → Utilitários (log, salvar métricas)
+├── notebooks/                     → Análises e gráficos
+│   └── exploratory_analysis.ipynb
+├── requirements.txt               → Dependências do projeto
+└── README.txt                     → Este arquivo
 
+----------------------------
+🧰 TECNOLOGIAS UTILIZADAS
+----------------------------
+- Python
+- Pygame
+- NumPy
+- Matplotlib
 
-Tecnologias Utilizadas
-Python: Linguagem de programação principal.
+----------------------------
+▶️ COMO EXECUTAR
+----------------------------
 
-Pygame: Framework para desenvolvimento de jogos.
+1. Clone o repositório:
+   git clone https://github.com/seu_usuario/pong-ml.git
 
-NumPy: Manipulação de arrays e cálculos.
+2. Acesse o diretório:
+   cd pong-ml
 
-Matplotlib: Visualização de dados e geração de gráficos.
+3. Instale as dependências:
+   pip install -r requirements.txt
 
-Como Executar
-Clone o repositório:
+4. Treine a IA:
+   python src/train.py
 
+5. Jogue contra a IA:
+   python src/play.py
 
-git clone https://github.com/seu_usuario/pong-ml.git
+----------------------------
+📊 DOCUMENTAÇÃO E MÉTRICAS
+----------------------------
+- Documentação técnica disponível na pasta 'docs/'
+- Gráficos de desempenho e notebooks interativos em 'notebooks/'
 
+----------------------------
+🤝 CONTRIBUIÇÕES
+----------------------------
+Contribuições são bem-vindas! Envie um pull request ou abra uma issue com melhorias ou ideias.
 
-Instale as dependências:
+----------------------------
+📄 LICENÇA
+----------------------------
+Este projeto está licenciado sob a Licença MIT.
 
-cd pong-ml
-pip install -r requirements.txt
-Treinar a IA:
-
-Execute o script de treinamento:
-
-python src/train.py
-Jogar contra a IA:
-
-Após o treinamento, inicie o jogo para desafiar a IA:
-
-python src/play.py
-Documentação e Análises
-Documentação Completa:
-Consulte o diretório docs/ para um PDF com detalhes do projeto, fluxogramas e explicações sobre as escolhas de design e algoritmos utilizados.
 
 Análise de Dados:
 Utilize os notebooks em notebooks/ para visualizar as métricas de treinamento, como evolução da recompensa média e número de gerações necessárias para o aprendizado.
